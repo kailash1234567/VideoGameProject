@@ -17,6 +17,7 @@ public class TC5 {
 	public void testcasefive() throws IOException {
 		Properties pr = propertiesfile.uploadpropertiesfile("../VG/URI.properties");
 		HTTPMethods http = new HTTPMethods(pr);
+		System.out.println("**********************TC6********************");
 		Response res = http.delete("QA_Env_videogames_URI", TC1.responseidValue);
 		System.out.println("**********************TC5********************");
 		System.out.println("Status code is " + res.statusCode());
