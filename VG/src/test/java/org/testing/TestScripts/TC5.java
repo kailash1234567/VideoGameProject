@@ -18,7 +18,7 @@ public class TC5 {
 		Properties pr = propertiesfile.uploadpropertiesfile("../VG/URI.properties");
 		HTTPMethods http = new HTTPMethods(pr);
 		Response res = http.delete("QA_Env_videogames_URI", TC1.responseidValue);
-		System.out.println("**********************TC4********************");
+		System.out.println("**********************TC5********************");
 		System.out.println("Status code is " + res.statusCode());
 		System.out.println("response data is "+res.asString());
 		
